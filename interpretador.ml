@@ -228,7 +228,6 @@ let rec compose (s1:subst) (s2:subst) : subst =
   let r2 = List.filter (fun (x,y) -> not (List.mem x vs)) s1 in
   r1@r2
 
-
 (* testa se variável de tipo ocorre em tipo *)
 
 let rec var_in_tipo (v:int) (tp:tipo) : bool =
